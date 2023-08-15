@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+header{
+width: 100%;
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url("/img/img5.jpg");
+background-size: cover;
+font-family: sans-serif;
+}
+
+nav{
+width: 100%;
+height: 100px;
+color: #fff;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.logo{
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: Edwardian Script ITC;
+    color:white;
+}
+
+.menu a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-bottom: 2px solid indianred;
+transition: 0.4s linear;
+}
+
+.menu a:hover:before{
+    width: 90%;
+}
+
+
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-txt span{
+    letter-spacing: 5px;
+    font-size: 18px;
+
+}
+
+.h-txt h1{
+    font-size: 3.5em;
+}
+.h-txt a{
+    text-decoration: none;
+    background:indianred;
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-txt a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+
+
+
+.journey__container{
+    background-color:lightgray;
+    text-align: center;
+    color: black;
+    padding: 50px ;
+    font-size: 20px;
+
+}
+
+.journey__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.Waterfall__card{
+    background-color: var(--extra-light);
+}
+
+.waterfall__name{
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.waterfall__name i{
+    font-size: 1.2rem;
+}
+
+.waterfall__name span{
+    font-style: italic;
+
+}
+
+.journey__grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Waterfall__card img{
+	width:90%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+   
+}
+
+.banner__container{
+    background-image: linear-gradient(rgba(35,71,103,0.5),rgba(35,71,103,0.5)),url("img/img3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__container .section__container{
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color:white;
+}
+
+.banner__content h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.banner__content button {
+    padding: .5rem 2rem;
+    outline: none;
+    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.banner__container .section__container{
+    justify-content: flex-end;
+}
+
+.banner__content{
+    align-items: flex-end;
+    text-align: right;
+    max-width: 800px;
+}
+
+.banner__content p{
+    font-size: 20px;
+
+}
+
+
+
+
+.display__container{
+    background-color:lightgray;
+    text-align: center;
+    color:black;
+    padding: 50px ;
+    font-size: 20px;
+}
+
+
+
+.display__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem; 
+}
+
+.display__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1.5rem;
+    text-align: center;
+    color:white;
+}
+
+.display__card i{
+     font-size: 1rem;
+     color: rgba(35,71,103,0.8);
+}
+
+.display__card h4{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    color: red;
+}
+
+.display__card p{
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    color: black;
+}
+
+.display__grid .grid-1{
+    grid-area: 1/1/3/3;
+}
+
+
+.display__grid{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.display__card{
+    gap: 0;
+}
+
+.display__card i{
+    font-size: 1.rem;
+}
+
+.display__card h4{
+    font-size: 20px;
+}
+
+.display__card p{
+    font-size: 16px;
+}
+
+.display__card{
+    gap: .5em;
+}
+
+.display__card i{
+    font-size: 2rem;
+}
+
+.display__card p{
+    font-size: 16px;
+}
+
+.display__card img{
+	width:100%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+
+
+
+
+footer{
+    background-color:black;
+    color:lightgrey;
+    padding: 50px;
+}
+footer .section__container{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Edwardian Script ITC;
+}
+
+.social__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social__icons i{
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer p{
+    font-style:italic ;
+    font-size: 20px;
+}
+
